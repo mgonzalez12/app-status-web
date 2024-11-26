@@ -15,7 +15,7 @@ function error() {
             Lo sentimos, no se pudo procesar su transacción. Por favor, inténtelo de nuevo más tarde.
           </div>
           <div className="space-y-2">
-            <div className="flex justify-between">
+            <div className="flex justify-center">
               <span className="font-medium">Error</span>
             </div>
           </div>

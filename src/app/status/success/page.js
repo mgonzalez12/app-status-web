@@ -13,7 +13,7 @@ function success({ date = new Date().toLocaleString() } = {}) {
             Su transacción se ha completado con éxito.
           </div>
           <div className="space-y-2">
-            <div className="flex justify-between">
+            <div className="flex justify-center">
               <span>Gracias</span>
             </div>
           
