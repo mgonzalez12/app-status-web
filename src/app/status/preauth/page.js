@@ -1,10 +1,7 @@
 import { ShieldCheck } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
-export default function PreAuthTransactionPreview({ date = new Date() } = {}) {
-    const dateObj = typeof date === "string" ? new Date(date) : date;
-    const formattedDate = `${dateObj.toLocaleDateString('es-ES')} ${dateObj.toLocaleTimeString('es-ES')}`;
-
+export default function PreAuthTransactionPreview() {
     return (
         <div className="p-4 bg-gray-100 min-h-screen flex items-center justify-center">
             <Card className="w-full max-w-md mx-auto">
@@ -17,10 +14,7 @@ export default function PreAuthTransactionPreview({ date = new Date() } = {}) {
                         Su transacción ha sido preautorizada. Esperando confirmación final.
                     </div>
                     <div className="space-y-2">
-                        <div className="flex justify-between">
-                            <span className="font-medium">Fecha de Preautorización:</span>
-                            <span>{formattedDate}</span>
-                        </div>
+                       
                         <div className="flex justify-between">
                             <span className="font-medium">Estado:</span>
                             <span>En espera de confirmación</span>

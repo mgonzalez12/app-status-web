@@ -1,9 +1,7 @@
 import { XOctagon } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
-export default function CancelledTransactionPreview({ date = new Date() } = {}) {
-    const dateObj = typeof date === "string" ? new Date(date) : date;
-    const formattedDate = `${dateObj.toLocaleDateString('es-ES')} ${dateObj.toLocaleTimeString('es-ES')}`;
+export default function CancelledTransactionPreview() {
    return (
     <div className="p-4 bg-gray-100 min-h-screen flex items-center justify-center">
       <Card className="w-full max-w-md mx-auto">
@@ -16,10 +14,6 @@ export default function CancelledTransactionPreview({ date = new Date() } = {}) 
             La transacción ha sido cancelada. Si esto fue un error, por favor intente nuevamente.
           </div>
           <div className="space-y-2">
-            <div className="flex justify-between">
-              <span className="font-medium">Fecha de Cancelación:</span>
-              <span>{formattedDate}</span>
-            </div>
             <div className="flex justify-between">
               <span className="font-medium">Motivo:</span>
               <span>Cancelado por el usuario</span>

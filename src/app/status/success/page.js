@@ -14,13 +14,9 @@ function success({ date = new Date().toLocaleString() } = {}) {
           </div>
           <div className="space-y-2">
             <div className="flex justify-between">
-              <span className="font-medium">ID de Transacción</span>
-              <span></span>
+              <span>Gracias</span>
             </div>
-            <div className="flex justify-between">
-              <span className="font-medium">Fecha:</span>
-              <span>{date}</span>
-            </div>
+          
           </div>
         </CardContent>
       </Card>

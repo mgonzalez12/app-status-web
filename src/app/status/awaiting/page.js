@@ -1,9 +1,7 @@
 import { Clock } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
-export default function AwaitingTransactionPreview({ date = new Date() } = {}) {
-    const dateObj = typeof date === "string" ? new Date(date) : date;
-    const formattedDate = `${dateObj.toLocaleDateString('es-ES')} ${dateObj.toLocaleTimeString('es-ES')}`;
+export default function AwaitingTransactionPreview() {
   
   return (
     <div className="p-4 bg-gray-100 min-h-screen flex items-center justify-center">
@@ -19,15 +17,9 @@ export default function AwaitingTransactionPreview({ date = new Date() } = {}) {
           <div className="flex justify-center">
             <div className="w-8 h-8 border-4 border-yellow-500 border-t-transparent rounded-full animate-spin"></div>
           </div>
-          <div className="space-y-2">
-           
-            <div className="flex justify-between">
-              <span className="font-medium">Iniciado:</span>
-              <span>{formattedDate}</span>
-            </div>
-          </div>
+          <div className="space-y-2"></div>
           <div className="mt-6 text-center">
-            <p className="text-sm text-muted-foreground">Este proceso puede tardar unos minutos. No cierre esta ventana.</p>
+            <p className="text-sm text-muted-foreground">Este proceso puede tardar unos minutos.</p>
           </div>
         </CardContent>
       </Card>
